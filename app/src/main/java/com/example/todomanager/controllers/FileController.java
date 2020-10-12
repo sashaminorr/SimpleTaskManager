@@ -30,6 +30,11 @@ public class FileController {
     public File getStorageFile(Context context) throws IOException {
         File storage = new File(context.getFilesDir(), STORAGE_FILE);
         storage.createNewFile();
+        if (storage.length() == 0) {
+            String toWrite = "<tasks></tasks>";
+            FileWriter fr = new FileWriter(storage, false);
+            fr.write(toWrite);
+            fr.close();
         return storage;
     }
 
