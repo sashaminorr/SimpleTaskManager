@@ -35,6 +35,7 @@ public class FileController {
             FileWriter fr = new FileWriter(storage, false);
             fr.write(toWrite);
             fr.close();
+        }
         return storage;
     }
 
