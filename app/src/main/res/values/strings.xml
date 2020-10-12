@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToDoManager</string>
+    <string name="description">Description</string>
+    <string name="add_task">Add task</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="no_tasks">No tasks</string>
+</resources>

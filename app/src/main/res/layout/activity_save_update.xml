@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/saveUpdateView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveUpdateActivity">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/add_task"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/taskTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/taskTitle"
+        android:layout_width="289dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle" />
+
+    <EditText
+        android:id="@+id/taskDescription"
+        android:layout_width="289dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="300dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="134sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/date"
+        app:layout_constraintBottom_toTopOf="@+id/taskDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/taskTitle" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="134sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="11dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/time"
+        android:inputType="time"
+        app:layout_constraintBottom_toTopOf="@+id/taskDescription"
+        app:layout_constraintEnd_toStartOf="@+id/date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskTitle" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveUpdateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_done"
+        app:layout_anchor="@id/saveUpdateView"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/holo_red_dark"
+        android:clickable="true"
+        android:src="@drawable/ic_delete"
+        android:visibility="gone"
+        app:layout_anchor="@id/saveUpdateView"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_constraintBottom_toTopOf="@+id/saveUpdateButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
