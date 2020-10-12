@@ -7,7 +7,7 @@ Simple task manager built using Android Studio for educational purposes
 Use git clone command to download source code
 
 ```bash
-git clone https://github.com/min0rr/to-do-manager
+git clone https://github.com/min0rr/SimpleTaskManager
 ```
 
 ## Usage
