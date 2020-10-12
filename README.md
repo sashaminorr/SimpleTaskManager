@@ -4,7 +4,7 @@ Simple task manager built using Android Studio for educational purposes
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use git clone command to download source code
 
 ```bash
 git clone https://github.com/min0rr/to-do-manager
