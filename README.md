@@ -1,6 +1,6 @@
 # Simple Task Manager
 
-Simple task manager built using Android Studio
+Simple task manager built using Android Studio for educational purposes
 
 ## Installation
 
