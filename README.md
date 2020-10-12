@@ -17,6 +17,16 @@ Just import it in your Android Studio and you are good to go
 ## Preview
 Here are some previews of the app:
 
-1. Main screen
+1. Main screen 
+
 ![Alt text](https://github.com/min0rr/SimpleTaskManager/blob/master/images/preview_main.png)
 
+
+2. Add task screen 
+
+![Alt text](https://github.com/min0rr/SimpleTaskManager/blob/master/images/preview_add.png)
+
+
+3. Update task screen
+
+![Alt text](https://github.com/min0rr/SimpleTaskManager/blob/master/images/preview_edit.png)
