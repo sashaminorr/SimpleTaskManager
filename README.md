@@ -1,6 +1,7 @@
 # Simple Task Manager
 
 Simple task manager built using Android Studio for educational purposes
+WARNING: there is no database used. All data is stored in xml file
 
 ## Installation
 
